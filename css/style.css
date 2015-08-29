@@ -5070,7 +5070,7 @@ header .navbar-main .dropdown-menu {
 .login,
 .register {
   padding: 90px 0;
-  background-image: url(../img/backgrounds/blurred-bg1.jpg);
+  background-image: url('../img/splash.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
