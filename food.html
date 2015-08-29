@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="css/switcher.css" type="text/css">
     <link rel="stylesheet" href="css/datepicker.css" type="text/css">
     <link rel="stylesheet" href="css/button.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-calendar.css" type="text/css">
+    <link rel="stylesheet" href="css/food.css" type="text/css">
+
     <!-- End CSS Files -->
 
     <style type="text/css"></style>
@@ -76,8 +79,8 @@
         <!-- HABARI TOPNAV RIGHT BUTTON -->
         <ul class="button-container pull-right">
             <li class="item">
-                <a href="createmeeting.html" class="nav-button">
-                    <span class="fa fa-pencil-square-o"></span>
+                <a href="index.html" class="nav-button">
+                    <span class="fa fa-home"></span>
                 </a>
             </li>
             <!-- Right Sidebar Toggle Button -->
@@ -99,7 +102,7 @@
 
         <!-- HABARI CENTER TEXT -->
         <div class="nav-content">
-            <h3 class="page-title">Home</h3>
+            <h3 class="page-title">Recommend Food</h3>
         </div>
     </nav>
 </header>
@@ -225,69 +228,67 @@
 <aside class="content-wrapper sidebarLeft collapse in">
 
     <!-- Page Content -->
-    <div class="content container-fluid sidebarRight animated fadeInUp collapse">
+    <div class="content container-fluid sidebarRight animated fadeInUp mail message-list-wrapper collapse">
 
-        <div class="row">
 
-            <div class="col-sm-12">
-                <h3 class="page-header" style="margin-top: 0">Welcome Tyson!</h3>
+        <section class="panel food-panel">
+            <div class="panel-heading food-recommend">
+                <a href="#"><i class="fa fa-clock-o"></i> You might want to have lunch at 1.00 PM</a>
+                <p class="meeting-label">(before Corporate Meeting at 2.00 PM)</p>
+                <p>We recommend Ikkousha Hakata Ramen</p>
             </div>
-
-            <div class="clearfix"></div>
-
-            <div class="col-sm-4">
-                <div class="well well-white mini-profile-widget">
-                    <div class="image-container">
-                        <img src="img/1.jpg" class="avatar img-responsive" alt="avatar">
-                    </div>
-                    <div class="details">
-                        <h4>Tyson Kwek</h4>
-                        <hr>
-                        <div style="font-size:1.5em;">Accenture</div>
-                        <div>Technology Consultant</div>
-                        <div>Current City : Singapore, Orchard</div>
-                        <!--<p class="mg-top-20">-->
-                            <!--<a href="javascript:void(0);" class="btn btn-blue">-->
-                                <!--<i class="fa fa-facebook fa-fw"></i>-->
-                            <!--</a>-->
-                            <!--<a href="javascript:void(0);" class="btn btn-info">-->
-                                <!--<i class="fa fa-twitter fa-fw"></i>-->
-                            <!--</a>-->
-                            <!--<a href="javascript:void(0);" class="btn btn-red">-->
-                                <!--<i class="fa fa-google-plus fa-fw"></i>-->
-                            <!--</a>-->
-                        <!--</p>-->
-                    </div>
+            <div class="map-container">
+                <div class="google-maps" id="map-canvas">
                 </div>
             </div>
+        </section>
 
-            <div class="col-sm-4">
-                <div class="well well-solid bg3 weather">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="top">
-                                <h3 class="title">Today : 33°C</h3>
-                                <h5>Singapore</h5>
-                                <canvas id="weatherToday" width="512" height="512"></canvas>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 mg-top-10">
-                            <canvas id="weatherDay1" width="256" height="256"></canvas>
-                            <h5>Sat : 26°C</h5>
-                        </div>
-                        <div class="col-xs-4 mg-top-10">
-                            <canvas id="weatherDay2" width="256" height="256"></canvas>
-                            <h5>Sun : 27°C</h5>
-                        </div>
-                        <div class="col-xs-4 mg-top-10">
-                            <canvas id="weatherDay3" width="256" height="256"></canvas>
-                            <h5>Mon : 25°C</h5>
-                        </div>
-                    </div>
-                </div>
+        <section class="panel food-panel">
+            <div class="panel-heading foodlist-widget">
+                <a href="#"><i class="fa fa-map-marker"></i> Other Nearby Food Places</a>
             </div>
-
-        </div>
+            <div class="list-group">
+                <a href="" class="list-group-item foodlist">
+                    <img src="img/food/tg.jpg" class="food-logo pull-left">
+                    <div class="pull-right badge food-rating-green">4.7 ★</div>
+                    <h5>Twenty Grammes</h5>
+                    <small>Cafe · Ice Cream Parlor <br/>
+                        753 North Bridge Road #01-01</small>
+                </a>
+            </div>
+            <div class="list-group">
+                <a href="" class="list-group-item foodlist">
+                    <img src="img/food/a-roy-thai.jpg" class="food-logo pull-left">
+                    <div class="pull-right badge food-rating-orange">4.1 ★</div>
+                    <h5>A - Roy Thai</h5>
+                    <small>Thai Restaurant <br/>
+                        109 North Bridge Rd, Funan</small>
+                </a>
+            </div>
+            <div class="list-group">
+                <a href="" class="list-group-item foodlist">
+                    <img src="img/food/jade.png" class="food-logo pull-left">
+                    <div class="pull-right badge food-rating-orange">4.3 ★</div>
+                    <h5>Jadeite Vegetarian Restaurant</h5>
+                    <small>Vegetarian &amp; Vegan Restaurant <br/>
+                        470 North Bridge Road, Bugis Cube #03-21</small>
+                </a>
+            </div>
+            <div class="list-group">
+                <a href="" class="list-group-item foodlist">
+                    <img src="img/food/berrylite.jpg" class="food-logo pull-left">
+                    <div class="pull-right badge food-rating-green">4.6 ★</div>
+                    <h5>Berrylite Bugis+</h5>
+                    <small>Cafe · Yoghurt Store <br/>
+                        201 Victoria Street</small>
+                </a>
+            </div>
+            <div class="panel-footer foodlist-widget">
+                <a href="#" class="no-decor">
+                    View All Nearby Food Places <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+            </div>
+        </section>
 
     </div>
     <!-- End Page Content -->
@@ -296,6 +297,49 @@
 <!-- End Page Content Wrapper -->
 
 <script src="js/js-collate.js"></script>
+<script>
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(1.29153, 103.85927);
+        var mapOptions = {
+            zoom: 16,
+            center: myLatlng
+        };
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var contentString =
+                '<div class="food-window">'+
+                '<img id="marker-img" class="pull-left" src="img/food/ramen.jpg" />' +
+                '<h4> ' +
+                'Ikkousha Hakata Ramen' +
+                '<br/>'+
+                '<small>' +
+                'Ramen Restaurant (4.8 ★)' +
+                '</small>' +
+                '</h4>' +
+                '<p>30 Victoria Street Singapore 187996<br/>' +
+                '</p>'+
+                '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Pan Pacific Hotel Singapore'
+        });
+
+        infowindow.open(map,marker);
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 </body>
 </html>

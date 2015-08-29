@@ -1,0 +1,78 @@
+/******************************* food cards ***********************************/
+
+.food-panel {
+	margin-bottom: 0px;
+}
+
+.food-window {
+	width: 280px;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 100%; 
+        height: 0;
+        overflow: hidden;
+}
+
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+
+#marker-img {
+	width: 60px;
+    margin: 5px 10px 0 0;
+    border-radius: 30px
+}
+
+.food-recommend {
+	background-color: #f1c40f;
+    padding: 16px 16px 10px 16px;
+    border: none;	
+}
+
+.food-recommend a {
+	color: #fff;
+	font-size: 16px;
+}
+
+.meeting-label {
+	color: #fff;
+	font-size: 14px;
+}
+
+.foodlist-widget {
+	background-color: #CEF1F6;
+    padding: 16px;
+    border: none;
+}
+
+.foodlist-widget a{
+    color: #777;
+}
+
+.food-rating-green {
+	margin-top: 10px;
+    background-color: #8BC34A;
+}
+
+.food-rating-orange {
+	margin-top: 10px;
+    background-color: #ef6c00;
+}
+
+.food-logo {
+	width: 50px;
+    margin: 5px 10px 0 0;
+    border-radius: 25px
+}
+
+.foodlist h5 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
