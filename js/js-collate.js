@@ -22,4 +22,4 @@ document.write('<script src="js/modernizr.js" type="text/javascript"></script>')
 document.write('<script src="js/navigation.js" type="text/javascript"></script>');
 
 
-document.write('<script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>');
+document.write('<script src="js/map.js" type="text/javascript"></script>');
