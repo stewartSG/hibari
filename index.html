@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Hibari</title>
+
+    <!-- Fonts -->
+    <link href="css/font1.css" rel="stylesheet" type="text/css">
+    <link href="css/font2.css" rel="stylesheet" type="text/css">
+    <!-- End Fonts -->
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/switcher.css" type="text/css">
+    <link rel="stylesheet" href="css/datepicker.css" type="text/css">
+    <link rel="stylesheet" href="css/button.css" type="text/css">
+    <!-- End CSS Files -->
+
+    <style type="text/css"></style>
+    <style id="fit-vids-style">.fluid-width-video-wrapper {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+
+    .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }</style>
+</head>
+
+<body class="header-fixed skin-blue  pace-done" cz-shortcut-listen="true">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+
+<!-- FIXME NAVIGATIONAL RELATED STUFF -->
+<header>
+    <a href="#" class="logo hidden-xs">
+        <span class="icon">
+            <i class="fa fa-paper-plane"></i>
+        </span>Hibari
+    </a>
+    <nav class="navbar-main" role="navigation">
+
+        <!-- HABARI TOPNAV LEFT BUTTON-->
+        <ul class="button-container pull-left">
+
+            <li class="item">
+                <!-- Left Sidebar Toggle Button -->
+                <a id="sidebarLeftToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarLeft">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- End Left Button Container -->
+
+        <!-- HABARI TOPNAV RIGHT BUTTON -->
+        <ul class="button-container pull-right">
+            <li class="item">
+                <a href="http://www.google.com" class="nav-button">
+                    <span class="fa fa-pencil-square-o"></span>
+                </a>
+            </li>
+            <!-- Right Sidebar Toggle Button -->
+            <!--<a id="sidebarRightToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarRight">-->
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--<span class="fa fa-pencil-square-o"></span>-->
+            <!--</a>-->
+            <!-- End Right Sidebar Toggle Button -->
+            <li class="item dropdown collapse sidebarRight chat-search hidden-xs">
+                <!-- Chat List Search Form -->
+                <form class="search-form" role="search">
+                    <input class="form-control" type="text" placeholder="Search Users...">
+                </form>
+                <!-- End Chat List Search Form -->
+            </li>
+
+        </ul>
+        <!-- End Right Button Container -->
+
+        <!-- HABARI CENTER TEXT -->
+        <div class="nav-content">
+            <h3 class="page-title">Home</h3>
+        </div>
+    </nav>
+</header>
+<aside class="sidebar sidebar-left collapse navbar-collapse sidebarLeft in">
+    <!-- Sidebar Wrapper -->
+    <div class="sidebar-wrapper">
+        <!-- Sidebar Navigation Wrapper *****-->
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 637px;">
+            <div class="sidebar-nav-wrapper" style="overflow: hidden; width: auto; height: 637px;">
+                <!-- # user profile area -->
+                <div class="user-container dropdown" style="margin-top: 20px;">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                        <div class="pull-left image">
+                            <img src="img/1.jpg" class="img-thumbnail avatar bg-light-blue"
+                                 alt="user profile image">
+                        </div>
+                        <div class="pull-left info">
+                            <h4 class="name">Tyson Kwek</h4>
+                            <h6 class="text-muted extra">Technology Consultant</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i
+                                class="fa fa-user fa-fw icon"></i>Profile</a></li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw icon"></i>Account
+                            Settings</a></li>
+                        <li><a href="#"><i
+                                class="fa fa-list fa-fw icon"></i>Activity Log</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i
+                                class="fa fa-lock fa-fw icon"></i>Lock Account</a></li>
+                        <li><a href="#"><i
+                                class="fa fa-sign-out fa-fw icon"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+                <!-- End User Conatiner -->
+                <!-- Sidebar Navigation ****-->
+                <ul class="sidebar-nav">
+
+                    <!-- Menu Item -->
+                    <li class="border-left-green">
+                        <a href="index.html">
+                            <i class="menu-icon fa fa-lg fa-fw fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- End Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="border-left-blue">
+                        <a href="timeline.html">
+                            <i class="menu-icon fa fa-lg fa-fw fa-clock-o"></i> <span>Timeline</span>
+                        </a>
+                    </li>
+                    <!-- End Menu Item -->
+
+
+                    <!-- Menu Item -->
+                    <li class="border-left-pink">
+                        <a href="teleport.html">
+                            <i class="menu-icon fa fa-lg fa-fw fa-map-marker"></i> <span>Teleport</span>
+                        </a>
+                    </li>
+                    <!-- End Menu Item -->
+
+
+                    <!-- Menu Item -->
+                    <li class="border-left-orange">
+                        <a href="agenda.html">
+                            <i class="menu-icon fa fa-lg fa-fw fa-calendar-o"></i> <span>Agendas</span>
+                        </a>
+                    </li>
+                    <!-- End Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="border-left-light-blue">
+                        <a href="follow-up.html">
+                            <i class="menu-icon fa fa-lg fa-fw fa-retweet"></i> <span>Follow Ups</span>
+                        </a>
+                    </li>
+                    <!-- End Menu Item -->
+
+
+                    <!-- Menu Item -->
+                    <li class="border-left-purple">
+                        <a href="setting.html">
+                            <i class="menu-icon fa fa-lg fa-fw fa-cogs"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                    <!-- End Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="border-left-light-blue">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#mail-submenu" title="Mail">
+                            <i class="menu-icon fa fa-lg fa-fw fa-inbox"></i> <span class="parent-item">Mail</span>
+                            <span class="badge bg-green squared pull-right">24 New</span>
+                        </a>
+                        <ul id="mail-submenu" class="collapse">
+                            <li>
+                                <a href="#">Inbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Open Message</a>
+                            </li>
+                            <li>
+                                <a href="#">Compose</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <div class="search-form-container">
+                        <form class="search-form" role="search">
+                            <input type="text" placeholder="Search meeting, agenda etc">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!-- End Menu Item -->
+                </ul>
+                <!-- End Sidebar Navigation -->
+            </div>
+            <div class="slimScrollBar"
+                 style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 637px; background: rgb(0, 0, 0);"></div>
+            <div class="slimScrollRail"
+                 style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+        </div>
+        <!-- End Sidebar Navigation Wrapper -->
+    </div>
+    <!-- End Sidebar Wrapper -->
+</aside>
+<!-- END OF NAVIGATIONAL RELATED STUFF -->
+
+<!-- FIXME INSERT PAGE CONTENT HERE  -->
+<aside class="content-wrapper sidebarLeft collapse in">
+
+    <!-- Page Content -->
+    <div class="content container-fluid sidebarRight animated fadeInUp collapse">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h3 class="page-header" style="margin-top: 0">Welcome Tyson!</h3>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-sm-4">
+                <div class="well well-white mini-profile-widget">
+                    <div class="image-container">
+                        <img src="img/1.jpg" class="avatar img-responsive" alt="avatar">
+                    </div>
+                    <div class="details">
+                        <h4>Tyson Kwek</h4>
+                        <hr>
+                        <div style="font-size:1.5em;">Accenture</div>
+                        <div>Technology Consultant</div>
+                        <div>Current City : Singapore, Orchard</div>
+                        <!--<p class="mg-top-20">-->
+                            <!--<a href="javascript:void(0);" class="btn btn-blue">-->
+                                <!--<i class="fa fa-facebook fa-fw"></i>-->
+                            <!--</a>-->
+                            <!--<a href="javascript:void(0);" class="btn btn-info">-->
+                                <!--<i class="fa fa-twitter fa-fw"></i>-->
+                            <!--</a>-->
+                            <!--<a href="javascript:void(0);" class="btn btn-red">-->
+                                <!--<i class="fa fa-google-plus fa-fw"></i>-->
+                            <!--</a>-->
+                        <!--</p>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="well well-solid bg3 weather">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="top">
+                                <h3 class="title">Today : 33°C</h3>
+                                <h5>Singapore</h5>
+                                <canvas id="weatherToday" width="512" height="512"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 mg-top-10">
+                            <canvas id="weatherDay1" width="256" height="256"></canvas>
+                            <h5>Sat : 26°C</h5>
+                        </div>
+                        <div class="col-xs-4 mg-top-10">
+                            <canvas id="weatherDay2" width="256" height="256"></canvas>
+                            <h5>Sun : 27°C</h5>
+                        </div>
+                        <div class="col-xs-4 mg-top-10">
+                            <canvas id="weatherDay3" width="256" height="256"></canvas>
+                            <h5>Mon : 25°C</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Page Content -->
+
+</aside>
+<!-- End Page Content Wrapper -->
+
+<script src="js/js-collate.js"></script>
+
+</body>
+</html>

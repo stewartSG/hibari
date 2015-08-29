@@ -1,0 +1,306 @@
+/************************* some useful classes ***********************************/
+
+.btn-round {
+    border-radius: 100px;
+}
+
+.centered-title {
+    display: block;
+    float: none;
+    color: #f2f4f8;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    height: auto;
+    line-height: 50px;
+    padding: 0 15px;
+
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+    padding: 10px;
+}
+
+hr{
+    display:block;
+    margin:1em 0;
+    padding:0;height:1px;
+    border:0;
+    border-top:1px solid #e3e6f3;
+}
+
+.scroll-list {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.completed_item {
+text-decoration: line-through;
+}
+
+/******************************* avatar images *************************************/
+
+img{
+    max-width:100%;
+    height:auto
+}
+
+.img-rounded{
+    border-radius:2px;
+}
+
+.img-circle{
+    border-radius:50%;
+}
+
+.avatar{
+    position:relative;
+    display:inline-block;
+    width:100%
+}
+
+.user-avatar {
+    width: 40px;
+    margin: 5px 5px 0 0;
+}
+
+.user-avatar-sm {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/******************************* special forms *************************************/
+
+.transparent-form {
+    background-color: transparent;
+    border: transparent;
+}
+
+.inner-addon { 
+    position: relative; 
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.right-addon .glyphicon { right: 20px;}
+
+/************************* dashboard login page ***********************************/
+
+.login-container {
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.login-box {
+    width: 360px;
+}
+
+.login-box form button {
+    margin-top: 30px;
+}
+
+/************************* dashboard quick links ***********************************/
+
+.quick-link {
+    color: #2c3e50;
+    background-color: #fff;
+    min-height: 50px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.quick-link .quick-link-icon {
+    color: #fff;
+    background-color: #2c3e50;
+    height: 100%;
+    min-width: 50px;
+    padding: 10px;
+}
+
+a .quick-link h5{
+    color: #2c3e50;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal; 
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+/************************ dashboard panel common look and feel ****************************/
+
+.dashboard-name {
+    margin: 5px;
+    color: #777;
+}
+
+.dashboard-title-panel {
+    color: #fff;
+    background-color: #2c3e50;
+}
+
+.dashboard-title-panel a{
+    color: #fff;
+}
+
+.dashboard-title-panel .pull-right {
+    border-left: 1px solid #bdc3c7;
+    margin: -10px 0;    
+    height: 42px;
+}
+
+.btn-panel-right, .btn-panel-right:hover {
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 0px 10px 10px;
+    border-radius: 0px;
+}
+
+/******************************* announcements ***********************************/
+
+.announcement-widget {
+    background-color: #2c3e50;
+}
+
+.announcement-widget a{
+    color: #fff;
+}
+
+/******************************* messages & contacts **********************************/
+
+.contact-list {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.chat-item:before,
+.chat-item:after {
+  content: " ";
+  display: table;
+}
+
+.chat-item {
+    border-color: transparent;
+}
+.chat-item:after {
+  clear: both;
+}
+.chat-item .arrow {
+  top: 20px;
+}
+.chat-item .chat-body {
+  position: relative;
+  margin-left: 50px;
+  min-height: 30px;
+}
+.chat-item .chat-body .panel {
+  margin: 0 -1px;
+  border: 1px solid #e1e6ef;
+  border-radius: 3px;
+}
+.chat-item.right .chat-body {
+  margin-left: 0;
+  margin-right: 55px;
+}
+.arrow {
+  border-width: 8px;
+  z-index: 10;
+}
+.arrow,
+.arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.arrow:after {
+  border-width: 7px;
+  content: "";
+}
+.arrow.right {
+  top: 30%;
+  right: -8px;
+  margin-top: -8px;
+  border-right-width: 0;
+  border-left-color: #eee;
+  border-left-color: rgba(0,0,0,0.1);
+}
+.arrow.right:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  bottom: -7px;
+}
+.arrow.left {
+  top: 30%;
+  left: -8px;
+  margin-top: -8px;
+  border-left-width: 0;
+  border-right-color: #eee;
+  border-right-color: rgba(0,0,0,0.1);
+}
+.arrow.left:after {
+  content: " ";
+  left: 1px;
+  border-left-width: 0;
+  border-right-color: #fff;
+  bottom: -7px;
+}
+
+.chat-input {
+  padding: 5px;
+  background-color: #f7f8fb;
+}
+
+.chat-input-text {
+  border-radius: 20px;
+}
+
+.chat-input-btn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/************************* receipt and transaction ***********************************/
+
+.tab-content .col-xs-12{
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-top-right-radius: 3px;    
+}
+
+.receipt, .receipt-filter {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.member-receipt {
+    text-align: right;
+}
+
+.input-group-addon {
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.input-group .form-control {
+    border-left: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 11px;   
+}

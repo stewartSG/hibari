@@ -1,0 +1,262 @@
+.theme-color {
+    color: #00BCD4;
+}
+
+.timeline-avatar {
+    max-width: 30px;
+    display: inline;
+    margin: 0px 2px;
+}
+
+.calendar a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.calendar td{
+    text-align: center;
+    border:none !important;
+    padding: 0 !important;
+}
+.calendar .table-header td.year{
+    width: 72%;
+}
+
+.calendar .table-header i{
+    font-size: 14px;
+    padding: 10px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.calendar .prev_month{
+    float: left;
+}
+.calendar .next_month{
+    float: right;
+}
+.calendar .year{
+    text-align: center;
+    font-weight: 500;
+}
+.calendar .week_days{
+    font-weight: 500;
+}
+.calendar .table-header {
+    margin: 20px 0px;
+}
+
+.calendar .table td{
+    position: relative;
+    padding: 0;
+    border: none;
+}
+
+.calendar .table td.event a{
+    border:1px solid rgba(255,255,255,.2);
+    background-color: rgba(0,0,0,.05);
+    border-radius: 30px;
+}
+
+.calendar .table td.event a:hover{
+    background-color: rgba(0,0,0,.15);
+}
+
+.calendar .table td a{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 38px;
+}
+.calendar .table td span{
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    bottom: 4px;
+}
+
+.calendar .week_days td{
+    font-size: 10px;
+    font-weight: bold;
+}
+.calendar .visualmonthyear {
+}
+
+/******* calendar layout *******/
+
+.calendar-panel {
+    margin-bottom: 0px;
+}
+
+#dateDisplay {
+    background-color: #CEF1F6;
+    padding: 16px;
+    border: none;
+}
+
+.calendar .table td.today-event a {
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 30px;
+    background-color: #CEF1F6;
+}
+
+#eventList {
+    background-color: transparent;
+}
+
+.timeline-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 30px;
+    background-color: #CEF1F6;
+}
+
+.time-side {
+    font-size: 20px;
+}
+
+.event-title {
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.h4-tight {
+    margin-bottom: 0px;
+}
+
+.event-time {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/******* calendar layout *******/
+
+.noborder, .noborder .calendar, .noborder .calendar * {
+    border: none !important;
+}
+
+.dropdown-menu .calendar td a {
+    padding: 0px;
+}
+
+.calendar .popover, .calendar .popover a{
+    color: #666 !important;
+}
+
+.calendar .popover .popover-title{
+    white-space: nowrap;
+}
+
+.calendar .popover .popover-content{
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.timeline-separator {
+    background: #505050;
+    display: block;
+    height: 100%;
+    left: 0px;
+    margin-left: 121px;
+    position: absolute;
+    top: 412px;
+    width: 1px;
+    z-index: 0;
+    opacity: 0.35;
+}
+
+.timeline-body {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    margin-left: 140px;
+    height: 100%;
+}
+
+.timeline-title {
+    background: white;
+    color: #ccc;
+    font-weight: 800;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
+    padding: 6px 5px;
+    margin: 0 -60px;
+    z-index: 1;
+}
+
+.timeline-events {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.timeline-events li {
+    position: relative;
+    margin: 30px 0;
+    padding: 0 0 0 190px;
+    min-height: 65px;
+    z-index: 1;
+    max-width: 90%;
+}
+
+.timeline__timeline-date {
+    position: absolute;
+    top: 60%;
+    left: -115px;
+    width: 100px;
+    height: 48px;
+    margin-top: -24px;
+    text-align: right;
+    z-index: 3;
+}
+
+.timeline-date--date {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.timeline-date--time {
+    color: #777;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.timeline-info {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background-color: #00BCD4;
+    color: #cccccc;
+    font-size: 28px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 29px;
+    margin-top: -28px;
+    margin-left: 98px;
+    z-index: 2;
+    -moz-border-radius: 28px / 28px;
+    -webkit-border-radius: 28px 28px;
+    border-radius: 28px / 28px;
+}
+
+.timeline-event {
+    color: #777;
+    position: relative;
+    width: 100%;
+    margin-left: -60px;
+    min-height: 65px;
+    min-width: 250px;
+    padding: 10px 20px;
+}
