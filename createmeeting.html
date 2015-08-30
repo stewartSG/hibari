@@ -239,7 +239,7 @@
                                 <h4>Meeting Title</h4>
                                 <input type="text" class="form-control" value="Corporate Meeting" placeholder="Meeting Subject">
                             </div>
-                            <div class="col-sm-6 mg-btm-30">
+                            <div class="col-sm-6 mg-btm-30" id="location" style="opacity: 0">
                                 <h4>Where</h4>
                                 <input type="text" class="form-control" value="SCAPE, Orchard" placeholder="Location">
                             </div>
@@ -404,7 +404,8 @@
         }
 
         function displayPosition(position) {
-            alert("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+            alert("Confirm Location : Scape, Orchard" + "(" + position.coords.latitude + position.coords.longitude + ")");
+            $('#location').css("opacity", "1");
         }
 
 
