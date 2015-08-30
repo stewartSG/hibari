@@ -219,7 +219,7 @@
                         <i class="fa fa-times"></i>
                     </button>
                     <h4>You might want to have dinner at 6pm</h4>
-                    <p>We recommend Crystal Jade Kitchen</p>
+                    <p>We recommend Crystal Jade</p>
                 </div>
                 <div class="map-container">
                     <div class="google-maps" id="map-canvas">
@@ -231,7 +231,7 @@
                     <i class="fa fa-check icon"></i>
                 </div>
                 <div class="content">
-                    <strong>Wow! We found 113 recommendations</strong>
+                    <strong>Wow! We found 23 recommendations</strong>
                 </div>
             </div>
             <section class="panel food-panel">
@@ -437,11 +437,10 @@
                 '</div>';
             markerWindow.setContent(contentString);
             markerWindow.open(map, marker);
-        } else {
-            markerWindow.setContent(place.name);
         }
-
         google.maps.event.addListener(marker, 'click', function() {
+
+            markerWindow.setContent(place.name);
 
 
 
