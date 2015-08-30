@@ -7,17 +7,6 @@ $(document).ready( function(){
     events = [
       [
         "30/"+month+"/"+year, 
-        'Corporate Meeting', 
-        '#', 
-        '#1bbacc', 
-        '10:30 AM',
-        '30 August 2015',
-        'Ang Mo Kio Street 31',
-        '<p>Depart from Simei CC at 9.00 AM</p><img src="img/patrick.png" class="timeline-avatar"><img src="assets/img/stewart.png" class="timeline-avatar"><img src="assets/img/joscelin.png" class="timeline-avatar">',
-        'today'
-      ],    
-      [
-        "30/"+month+"/"+year, 
         'Lunch with Henry', 
         '#', 
         '#1bbacc', 
