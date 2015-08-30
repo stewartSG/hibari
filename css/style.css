@@ -5069,12 +5069,12 @@ header .navbar-main .dropdown-menu {
 /* Page: Login/Register */
 .login,
 .register {
-  padding: 90px 0;
   background-image: url('../img/splash.png');
   background-size: cover;
-  background-position: center;
+  background-position: -20px -50px;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  padding-top: 0;
 }
 .login .form-container,
 .register .form-container {
