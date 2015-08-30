@@ -219,14 +219,13 @@
                         <i class="fa fa-times"></i>
                     </button>
                     <h4>You might want to have dinner at 6pm</h4>
-                    <p>We recommend Crystal Jade</p>
+                    <p>We recommend Crystal Jade Kitchen</p>
                 </div>
                 <div class="map-container">
                     <div class="google-maps" id="map-canvas">
                     </div>
                 </div>
             </section>
-
             <div class="alert alert-theme alert-info fade in" style="margin-top: 10px; margin-bottom: 10px;">
                 <div class="left">
                     <i class="fa fa-check icon"></i>
@@ -235,7 +234,6 @@
                     <strong>Wow! We found 23 recommendations</strong>
                 </div>
             </div>
-
             <section class="panel food-panel">
                 <div class="list-group">
                     <a href="" class="list-group-item foodlist">
@@ -413,6 +411,7 @@
     function createMarker(place) {
 
         placeName = JSON.stringify(place.name);
+        console.log(placeName);
 
         var placeLoc = place.geometry.location;
         var marker = new google.maps.Marker({
@@ -421,31 +420,35 @@
             animation: google.maps.Animation.DROP
         });
 
+        if (placeName === '"Crystal Jade Kitchen"') {
+
+            var contentString =
+                '<div class="food-window">' +
+                '<img id="marker-img" class="pull-left" src="img/food/ramen.jpg" />' +
+                '<h4> ' +
+                'Crystal Jade Kitchen' +
+                '<br/>' +
+                '<small>' +
+                'Chinese Restaurant (4.8 ★)' +
+                '</small>' +
+                '</h4>' +
+                '<p>101 Tanjong Pagar Road 088522<br/>' +
+                '</p>' +
+                '</div>';
+            markerWindow.setContent(contentString);
+            markerWindow.open(map, marker);
+        } else {
+            markerWindow.setContent(place.name);
+        }
+
         google.maps.event.addListener(marker, 'click', function() {
-            if(placeName === '"Crystal Jade Kitchen"'){
-                alert('found cjk');
-                var contentString =
-                        '<div class="food-window">' +
-                        '<img id="marker-img" class="pull-left" src="img/food/ramen.jpg" />' +
-                        '<h4> ' +
-                        'Crystal Jade Kitchen' +
-                        '<br/>' +
-                        '<small>' +
-                        'Ramen Restaurant (4.8 ★)' +
-                        '</small>' +
-                        '</h4>' +
-                        '<p>101 Tanjong Pagar Road 088522<br/>' +
-                        '</p>' +
-                        '</div>';
-                markerWindow.setContent(contentString);
-                markerWindow.open(map, marker);
-            }else{
-                markerWindow.setContent(place.name);
-            }
+
 
 
         });
     }
+
+
 
     // google.maps.event.addDomListener(window, 'load', initialize);
     </script>
