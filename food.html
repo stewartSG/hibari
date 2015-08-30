@@ -231,22 +231,29 @@
     <div class="content container-fluid sidebarRight animated fadeInUp mail message-list-wrapper collapse">
 
 
+
         <section class="panel food-panel">
-            <div class="panel-heading food-recommend">
-                <a href="#"><i class="fa fa-clock-o"></i> You might want to have lunch at 1.00 PM</a>
-                <p class="meeting-label">(before Corporate Meeting at 2.00 PM)</p>
-                <p>We recommend Ikkousha Hakata Ramen</p>
+            <!--<div class="panel-heading food-recommend">-->
+                <!--<a href="#"><i class="fa fa-clock-o"></i> You might want to have lunch at 1.00 PM</a>-->
+                <!--<p class="meeting-label">(before Corporate Meeting at 2.00 PM)</p>-->
+                <!--<p>We recommend Ikkousha Hakata Ramen</p>-->
+            <!--</div>-->
+
+            <div class="alert alert-warning fade in">
+                <button type="button" class="close close-sm" data-dismiss="alert">
+                    <i class="fa fa-times"></i>
+                </button>
+                <h4>You might want to have lunch at 1pm</h4>
+                <p>We recommend Ikkousha Hakata Ramen!</p>
             </div>
+
             <div class="map-container">
                 <div class="google-maps" id="map-canvas">
                 </div>
             </div>
         </section>
 
-        <section class="panel food-panel">
-            <div class="panel-heading foodlist-widget">
-                <a href="#"><i class="fa fa-map-marker"></i> Other Nearby Food Places</a>
-            </div>
+        <section class="panel food-panel"> 
             <div class="list-group">
                 <a href="" class="list-group-item foodlist">
                     <img src="img/food/tg.jpg" class="food-logo pull-left">
@@ -283,11 +290,8 @@
                         201 Victoria Street</small>
                 </a>
             </div>
-            <div class="panel-footer foodlist-widget">
-                <a href="#" class="no-decor">
-                    View All Nearby Food Places <i class="fa fa-arrow-circle-o-right"></i>
-                </a>
-            </div>
+                <a href="timeline.html" class="btn btn-primary btn-lg col-xs-12" style="margin-top:10px; margin-bottom: 10px;"> Show more options <i class="fa fa-map-marker"></i></a>
+
         </section>
 
     </div>
