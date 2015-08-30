@@ -331,11 +331,10 @@
         service = new google.maps.places.PlacesService(map);
 
         var trafficLayer = new google.maps.TrafficLayer();
-        trafficLayer.setMap(map);
-        directionsDisplay.setMap(map);
-
+        trafficLayer.setMap(map); //set traffic overlay
+        directionsDisplay.setMap(map); // set route overlay
         calculateAndDisplayRoute(directionsService, directionsDisplay);
-        getSGTrafficIncident();
+        // getSGTrafficIncident();
         // Instantiate an info window to hold step text.
 
 
@@ -376,7 +375,7 @@
         }, function(response, status) {
             if (status === google.maps.DirectionsStatus.OK) {
                 directionsDisplay.setDirections(response);
-                showSteps(response); // pass response object to showStep function to get steps
+                // showSteps(response); // pass response object to showStep function to get steps
                 console.log(JSON.stringify(response));
                 // console.log(JSON.stringify(response.routes[0].legs));
             } else {

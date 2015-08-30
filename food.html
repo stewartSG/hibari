@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
     <title>Hibari</title>
-
     <!-- Fonts -->
     <link href="css/font1.css" rel="stylesheet" type="text/css">
     <link href="css/font2.css" rel="stylesheet" type="text/css">
     <!-- End Fonts -->
-
     <!-- CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -26,324 +24,401 @@
     <link rel="stylesheet" href="css/button.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-calendar.css" type="text/css">
     <link rel="stylesheet" href="css/food.css" type="text/css">
-
     <!-- End CSS Files -->
-
     <style type="text/css"></style>
-    <style id="fit-vids-style">.fluid-width-video-wrapper {
+    <style id="fit-vids-style">
+    .fluid-width-video-wrapper {
         width: 100%;
         position: relative;
         padding: 0;
     }
-
-    .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+    
+    .fluid-width-video-wrapper iframe,
+    .fluid-width-video-wrapper object,
+    .fluid-width-video-wrapper embed {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-    }</style>
+    }
+    </style>
 </head>
 
 <body class="header-fixed skin-blue  pace-done" cz-shortcut-listen="true">
-<div class="pace  pace-inactive">
-    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
-        <div class="pace-progress-inner"></div>
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
     </div>
-    <div class="pace-activity"></div>
-</div>
-
-<!-- FIXME NAVIGATIONAL RELATED STUFF -->
-<header>
-    <a href="#" class="logo hidden-xs">
-        <span class="icon">
+    <!-- FIXME NAVIGATIONAL RELATED STUFF -->
+    <header>
+        <a href="#" class="logo hidden-xs">
+            <span class="icon">
             <i class="fa fa-paper-plane"></i>
         </span>Hibari
-    </a>
-    <nav class="navbar-main" role="navigation">
-
-        <!-- HABARI TOPNAV LEFT BUTTON-->
-        <ul class="button-container pull-left">
-
-            <li class="item">
-                <!-- Left Sidebar Toggle Button -->
-                <a id="sidebarLeftToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarLeft">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="fa fa-bars"></span>
-                </a>
-            </li>
-
-        </ul>
-        <!-- End Left Button Container -->
-
-        <!-- HABARI TOPNAV RIGHT BUTTON -->
-        <ul class="button-container pull-right">
-            <li class="item">
-                <a href="timeline.html" class="nav-button">
-                    <span class="fa fa-clock-o"></span>
-                </a>
-            </li>
-            <!-- Right Sidebar Toggle Button -->
-            <!--<a id="sidebarRightToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarRight">-->
-            <!--<span class="sr-only">Toggle navigation</span>-->
-            <!--<span class="fa fa-pencil-square-o"></span>-->
-            <!--</a>-->
-            <!-- End Right Sidebar Toggle Button -->
-            <li class="item dropdown collapse sidebarRight chat-search hidden-xs">
-                <!-- Chat List Search Form -->
-                <form class="search-form" role="search">
-                    <input class="form-control" type="text" placeholder="Search Users...">
-                </form>
-                <!-- End Chat List Search Form -->
-            </li>
-
-        </ul>
-        <!-- End Right Button Container -->
-
-        <!-- HABARI CENTER TEXT -->
-        <div class="nav-content">
-            <h3 class="page-title">Recommend Food</h3>
-        </div>
-    </nav>
-</header>
-<aside class="sidebar sidebar-left collapse navbar-collapse sidebarLeft in">
-    <!-- Sidebar Wrapper -->
-    <div class="sidebar-wrapper">
-        <!-- Sidebar Navigation Wrapper *****-->
-        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 637px;">
-            <div class="sidebar-nav-wrapper" style="overflow: hidden; width: auto; height: 637px;">
-                <!-- # user profile area -->
-                <div class="user-container dropdown" style="margin-top: 20px;">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                        <div class="pull-left image">
-                            <img src="img/1.jpg" class="img-thumbnail avatar bg-light-blue"
-                                 alt="user profile image">
-                        </div>
-                        <div class="pull-left info">
-                            <h4 class="name">Tyson Kwek</h4>
-                            <h6 class="text-muted extra">Technology Consultant</h6>
-                        </div>
+        </a>
+        <nav class="navbar-main" role="navigation">
+            <!-- HABARI TOPNAV LEFT BUTTON-->
+            <ul class="button-container pull-left">
+                <li class="item">
+                    <!-- Left Sidebar Toggle Button -->
+                    <a id="sidebarLeftToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarLeft">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
                     </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><i
-                                class="fa fa-user fa-fw icon"></i>Profile</a></li>
-                        <li><a href="#"><i class="fa fa-cog fa-fw icon"></i>Account
-                            Settings</a></li>
-                        <li><a href="#"><i
-                                class="fa fa-list fa-fw icon"></i>Activity Log</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i
-                                class="fa fa-lock fa-fw icon"></i>Lock Account</a></li>
-                        <li><a href="#"><i
-                                class="fa fa-sign-out fa-fw icon"></i>Sign Out</a></li>
-                    </ul>
-                </div>
-                <!-- End User Conatiner -->
-                <!-- Sidebar Navigation ****-->
-                <ul class="sidebar-nav">
-
-                    <!-- Menu Item -->
-                    <li class="border-left-green">
-                        <a href="index.html">
-                            <i class="menu-icon fa fa-lg fa-fw fa-home"></i> <span>Home</span>
-                        </a>
-                    </li>
-                    <!-- End Menu Item -->
-
-                    <!-- Menu Item -->
-                    <li class="border-left-blue">
-                        <a href="index.html">
-                            <i class="menu-icon fa fa-lg fa-fw fa-clock-o"></i> <span>Timeline</span>
-                        </a>
-                    </li>
-                    <!-- End Menu Item -->
-
-
-                    <!-- Menu Item -->
-                    <li class="border-left-pink">
-                        <a href="teleport.html">
-                            <i class="menu-icon fa fa-lg fa-fw fa-map-marker"></i> <span>Teleport</span>
-                        </a>
-                    </li>
-                    <!-- End Menu Item -->
-
-
-                    <!-- Menu Item -->
-                    <li class="border-left-green">
-                        <a href="agenda.html">
-                            <i class="menu-icon fa fa-lg fa-fw fa-calendar-o"></i> <span>Agendas</span>
-                        </a>
-                    </li>
-                    <!-- End Menu Item -->
-
-                    <!-- Menu Item -->
-                    <li class="border-left-purple">
-                        <a href="setting.html">
-                            <i class="menu-icon fa fa-lg fa-fw fa-cogs"></i> <span>Settings</span>
-                        </a>
-                    </li>
-                    <!-- End Menu Item -->
-
-                    <!-- Menu Item -->
-                    <li class="border-left-light-blue">
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#mail-submenu" title="Mail">
-                            <i class="menu-icon fa fa-lg fa-fw fa-inbox"></i> <span class="parent-item">Mail</span>
-                            <span class="badge bg-green squared pull-right">24 New</span>
-                        </a>
-                        <ul id="mail-submenu" class="collapse">
-                            <li>
-                                <a href="inbox.html">Inbox</a>
-                            </li>
-                            <li>
-                                <a href="#">Open Message</a>
-                            </li>
-                            <li>
-                                <a href="#">Compose</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <div class="search-form-container">
-                        <form class="search-form" role="search">
-                            <input type="text" placeholder="Search meeting, agenda etc">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    <!-- End Menu Item -->
-                </ul>
-                <!-- End Sidebar Navigation -->
+                </li>
+            </ul>
+            <!-- End Left Button Container -->
+            <!-- HABARI TOPNAV RIGHT BUTTON -->
+            <ul class="button-container pull-right">
+                <li class="item">
+                    <a href="timeline.html" class="nav-button">
+                        <span class="fa fa-clock-o"></span>
+                    </a>
+                </li>
+                <!-- Right Sidebar Toggle Button -->
+                <!--<a id="sidebarRightToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarRight">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="fa fa-pencil-square-o"></span>-->
+                <!--</a>-->
+                <!-- End Right Sidebar Toggle Button -->
+                <li class="item dropdown collapse sidebarRight chat-search hidden-xs">
+                    <!-- Chat List Search Form -->
+                    <form class="search-form" role="search">
+                        <input class="form-control" type="text" placeholder="Search Users...">
+                    </form>
+                    <!-- End Chat List Search Form -->
+                </li>
+            </ul>
+            <!-- End Right Button Container -->
+            <!-- HABARI CENTER TEXT -->
+            <div class="nav-content">
+                <h3 class="page-title">Recommend Food</h3>
             </div>
-            <div class="slimScrollBar"
-                 style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 637px; background: rgb(0, 0, 0);"></div>
-            <div class="slimScrollRail"
-                 style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+        </nav>
+    </header>
+    <aside class="sidebar sidebar-left collapse navbar-collapse sidebarLeft in">
+        <!-- Sidebar Wrapper -->
+        <div class="sidebar-wrapper">
+            <!-- Sidebar Navigation Wrapper *****-->
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 637px;">
+                <div class="sidebar-nav-wrapper" style="overflow: hidden; width: auto; height: 637px;">
+                    <!-- # user profile area -->
+                    <div class="user-container dropdown" style="margin-top: 20px;">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="pull-left image">
+                                <img src="img/1.jpg" class="img-thumbnail avatar bg-light-blue" alt="user profile image">
+                            </div>
+                            <div class="pull-left info">
+                                <h4 class="name">Tyson Kwek</h4>
+                                <h6 class="text-muted extra">Technology Consultant</h6>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><i
+                                class="fa fa-user fa-fw icon"></i>Profile</a></li>
+                            <li><a href="#"><i class="fa fa-cog fa-fw icon"></i>Account
+                            Settings</a></li>
+                            <li><a href="#"><i
+                                class="fa fa-list fa-fw icon"></i>Activity Log</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i
+                                class="fa fa-lock fa-fw icon"></i>Lock Account</a></li>
+                            <li><a href="#"><i
+                                class="fa fa-sign-out fa-fw icon"></i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                    <!-- End User Conatiner -->
+                    <!-- Sidebar Navigation ****-->
+                    <ul class="sidebar-nav">
+                        <!-- Menu Item -->
+                        <li class="border-left-green">
+                            <a href="index.html">
+                                <i class="menu-icon fa fa-lg fa-fw fa-home"></i> <span>Home</span>
+                            </a>
+                        </li>
+                        <!-- End Menu Item -->
+                        <!-- Menu Item -->
+                        <li class="border-left-blue">
+                            <a href="index.html">
+                                <i class="menu-icon fa fa-lg fa-fw fa-clock-o"></i> <span>Timeline</span>
+                            </a>
+                        </li>
+                        <!-- End Menu Item -->
+                        <!-- Menu Item -->
+                        <li class="border-left-pink">
+                            <a href="teleport.html">
+                                <i class="menu-icon fa fa-lg fa-fw fa-map-marker"></i> <span>Teleport</span>
+                            </a>
+                        </li>
+                        <!-- End Menu Item -->
+                        <!-- Menu Item -->
+                        <li class="border-left-green">
+                            <a href="agenda.html">
+                                <i class="menu-icon fa fa-lg fa-fw fa-calendar-o"></i> <span>Agendas</span>
+                            </a>
+                        </li>
+                        <!-- End Menu Item -->
+                        <!-- Menu Item -->
+                        <li class="border-left-purple">
+                            <a href="setting.html">
+                                <i class="menu-icon fa fa-lg fa-fw fa-cogs"></i> <span>Settings</span>
+                            </a>
+                        </li>
+                        <!-- End Menu Item -->
+                        <!-- Menu Item -->
+                        <li class="border-left-light-blue">
+                            <a href="javascript:void(0);" data-toggle="collapse" data-target="#mail-submenu" title="Mail">
+                                <i class="menu-icon fa fa-lg fa-fw fa-inbox"></i> <span class="parent-item">Mail</span>
+                                <span class="badge bg-green squared pull-right">24 New</span>
+                            </a>
+                            <ul id="mail-submenu" class="collapse">
+                                <li>
+                                    <a href="inbox.html">Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="#">Open Message</a>
+                                </li>
+                                <li>
+                                    <a href="#">Compose</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="search-form-container">
+                            <form class="search-form" role="search">
+                                <input type="text" placeholder="Search meeting, agenda etc">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- End Menu Item -->
+                    </ul>
+                    <!-- End Sidebar Navigation -->
+                </div>
+                <div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 637px; background: rgb(0, 0, 0);"></div>
+                <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+            </div>
+            <!-- End Sidebar Navigation Wrapper -->
         </div>
-        <!-- End Sidebar Navigation Wrapper -->
-    </div>
-    <!-- End Sidebar Wrapper -->
-</aside>
-<!-- END OF NAVIGATIONAL RELATED STUFF -->
-
-<!-- FIXME INSERT PAGE CONTENT HERE  -->
-<aside class="content-wrapper sidebarLeft collapse in">
-
-    <!-- Page Content -->
-    <div class="content container-fluid sidebarRight animated fadeInUp mail message-list-wrapper collapse">
-
-
-
-        <section class="panel food-panel">
-            <!--<div class="panel-heading food-recommend">-->
+        <!-- End Sidebar Wrapper -->
+    </aside>
+    <!-- END OF NAVIGATIONAL RELATED STUFF -->
+    <!-- FIXME INSERT PAGE CONTENT HERE  -->
+    <aside class="content-wrapper sidebarLeft collapse in">
+        <!-- Page Content -->
+        <div class="content container-fluid sidebarRight animated fadeInUp mail message-list-wrapper collapse">
+            <section class="panel food-panel">
+                <!--<div class="panel-heading food-recommend">-->
                 <!--<a href="#"><i class="fa fa-clock-o"></i> You might want to have lunch at 1.00 PM</a>-->
                 <!--<p class="meeting-label">(before Corporate Meeting at 2.00 PM)</p>-->
                 <!--<p>We recommend Ikkousha Hakata Ramen</p>-->
-            <!--</div>-->
-
-            <div class="alert alert-warning fade in">
-                <button type="button" class="close close-sm" data-dismiss="alert">
-                    <i class="fa fa-times"></i>
-                </button>
-                <h4>You might want to have lunch at 1pm</h4>
-                <p>We recommend Ikkousha Hakata Ramen!</p>
-            </div>
-
-            <div class="map-container">
-                <div class="google-maps" id="map-canvas">
+                <!--</div>-->
+                <div class="alert alert-warning fade in">
+                    <button type="button" class="close close-sm" data-dismiss="alert">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h4>You might want to have lunch at 1pm</h4>
+                    <p>We recommend Ikkousha Hakata Ramen!</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="panel food-panel"> 
-            <div class="list-group">
-                <a href="" class="list-group-item foodlist">
-                    <img src="img/food/tg.jpg" class="food-logo pull-left">
-                    <div class="pull-right badge food-rating-green">4.7 ★</div>
-                    <h5>Twenty Grammes</h5>
-                    <small>Cafe · Ice Cream Parlor <br/>
+                <div class="map-container">
+                    <div class="google-maps" id="map-canvas">
+                    </div>
+                </div>
+            </section>
+            <section class="panel food-panel">
+                <div class="list-group">
+                    <a href="" class="list-group-item foodlist">
+                        <img src="img/food/tg.jpg" class="food-logo pull-left">
+                        <div class="pull-right badge food-rating-green">4.7 ★</div>
+                        <h5>Twenty Grammes</h5>
+                        <small>Cafe · Ice Cream Parlor <br/>
                         753 North Bridge Road #01-01</small>
-                </a>
-            </div>
-            <div class="list-group">
-                <a href="" class="list-group-item foodlist">
-                    <img src="img/food/a-roy-thai.jpg" class="food-logo pull-left">
-                    <div class="pull-right badge food-rating-orange">4.1 ★</div>
-                    <h5>A - Roy Thai</h5>
-                    <small>Thai Restaurant <br/>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="" class="list-group-item foodlist">
+                        <img src="img/food/a-roy-thai.jpg" class="food-logo pull-left">
+                        <div class="pull-right badge food-rating-orange">4.1 ★</div>
+                        <h5>A - Roy Thai</h5>
+                        <small>Thai Restaurant <br/>
                         109 North Bridge Rd, Funan</small>
-                </a>
-            </div>
-            <div class="list-group">
-                <a href="" class="list-group-item foodlist">
-                    <img src="img/food/jade.png" class="food-logo pull-left">
-                    <div class="pull-right badge food-rating-orange">4.3 ★</div>
-                    <h5>Jadeite Vegetarian Restaurant</h5>
-                    <small>Vegetarian &amp; Vegan Restaurant <br/>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="" class="list-group-item foodlist">
+                        <img src="img/food/jade.png" class="food-logo pull-left">
+                        <div class="pull-right badge food-rating-orange">4.3 ★</div>
+                        <h5>Jadeite Vegetarian Restaurant</h5>
+                        <small>Vegetarian &amp; Vegan Restaurant <br/>
                         470 North Bridge Road, Bugis Cube #03-21</small>
-                </a>
-            </div>
-            <div class="list-group">
-                <a href="" class="list-group-item foodlist">
-                    <img src="img/food/berrylite.jpg" class="food-logo pull-left">
-                    <div class="pull-right badge food-rating-green">4.6 ★</div>
-                    <h5>Berrylite Bugis+</h5>
-                    <small>Cafe · Yoghurt Store <br/>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="" class="list-group-item foodlist">
+                        <img src="img/food/berrylite.jpg" class="food-logo pull-left">
+                        <div class="pull-right badge food-rating-green">4.6 ★</div>
+                        <h5>Berrylite Bugis+</h5>
+                        <small>Cafe · Yoghurt Store <br/>
                         201 Victoria Street</small>
-                </a>
-            </div>
+                    </a>
+                </div>
                 <a href="timeline.html" class="btn btn-primary btn-lg col-xs-12" style="margin-top:10px; margin-bottom: 10px;"> Show more options <i class="fa fa-map-marker"></i></a>
+            </section>
+        </div>
+        <!-- End Page Content -->
+    </aside>
+    <!-- End Page Content Wrapper -->
+    <script src="js/js-collate.js"></script>
+    <script>
+    var markerWindow;
+    var markerArray = [];
+    var directionsDisplay;
+    var directionsService;
+    var map;
+    var foodService;
 
-        </section>
-
-    </div>
-    <!-- End Page Content -->
-
-</aside>
-<!-- End Page Content Wrapper -->
-
-<script src="js/js-collate.js"></script>
-<script>
     function initialize() {
-        var myLatlng = new google.maps.LatLng(1.277035, 103.843493);
-        var mapOptions = {
-            zoom: 16,
-            center: myLatlng
-        };
+        directionsService = new google.maps.DirectionsService;
+        directionsDisplay = new google.maps.DirectionsRenderer;
+        markerWindow = new google.maps.InfoWindow(); // init stepdisplay
 
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-        var contentString =
-                '<div class="food-window">'+
-                '<img id="marker-img" class="pull-left" src="img/food/ramen.jpg" />' +
-                '<h4> ' +
-                'Ikkousha Hakata Ramen' +
-                '<br/>'+
-                '<small>' +
-                'Ramen Restaurant (4.8 ★)' +
-                '</small>' +
-                '</h4>' +
-                '<p>101 Tanjong Pagar Road 088522<br/>' +
-                '</p>'+
-                '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
+        map = new google.maps.Map(document.getElementById('map-canvas'), {
+            zoom: 12,
+            center: {
+                lat: 1.301254,
+                lng: 103.835679
+            }
         });
+        //init google place services with ap object
+        foodService = new google.maps.places.PlacesService(map);
 
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'Pan Pacific Hotel Singapore'
-        });
+        directionsDisplay.setMap(map); // set route overlay
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
 
-        infowindow.open(map,marker);
+        // var contentString =
+        //     '<div class="food-window">' +
+        //     '<img id="marker-img" class="pull-left" src="img/food/ramen.jpg" />' +
+        //     '<h4> ' +
+        //     'Ikkousha Hakata Ramen' +
+        //     '<br/>' +
+        //     '<small>' +
+        //     'Ramen Restaurant (4.8 ★)' +
+        //     '</small>' +
+        //     '</h4>' +
+        //     '<p>101 Tanjong Pagar Road 088522<br/>' +
+        //     '</p>' +
+        //     '</div>';
 
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
+        // var infowindow = new google.maps.InfoWindow({
+        //     content: contentString
+        // });
+
+        // var marker = new google.maps.Marker({
+        //     position: myLatlng,
+        //     map: map,
+        //     title: 'Pan Pacific Hotel Singapore'
+        // });
+
+        // infowindow.open(map, marker);
+
+        // google.maps.event.addListener(marker, 'click', function() {
+        //     infowindow.open(map, marker);
+        // });
+    }
+
+
+    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+
+        var start = new google.maps.LatLng(1.303863, 103.832315);
+        // var end = new google.maps.LatLng(1.295310, 103.851675);
+        var end = new google.maps.LatLng(1.304523, 103.855980);
+
+        directionsService.route({
+            origin: start,
+            destination: end,
+            travelMode: google.maps.TravelMode.DRIVING
+        }, function(response, status) {
+            if (status === google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(response);
+                showSteps(response); // pass response object to showStep function to get steps
+                console.log(JSON.stringify(response));
+                // console.log(JSON.stringify(response.routes[0].legs));
+            } else {
+                window.alert('Directions request failed due to ' + status);
+            }
         });
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+    function showSteps(directionResult) {
+        // For each step, place a marker, and add the text to the marker's
+        // info window. Also attach the marker to an array so we
+        // can keep track of it and remove it when calculating new
+        // routes.
+        var myRoute = directionResult.routes[0].legs[0];
+        var myWarnings = directionResult.routes[0].warnings;
 
+        console.log(JSON.stringify(myWarnings));
+
+        for (var i = 0; i < myRoute.steps.length; i++) {
+            // console.log("start_point: " + myRoute.steps[i].start_location);
+            // console.log("end_point: " + myRoute.steps[i].end_location);
+            // var startmarker = new google.maps.Marker({
+            //     position: myRoute.steps[i].start_point,
+            //     map: map,
+            //     animation: google.maps.Animation.DROP
+
+            // });
+            // var endmarker = new google.maps.Marker({ // position: myRoute.steps[i].start_point, // map: map // });
+
+
+            // attachInstructionText(startmarker, myRoute.steps[i].instructions);
+            getNearbyPlaces(myRoute.steps[i].start_point);
+            // getNearbyPlaces(myRoute.steps[i].end_point);
+
+            // markerArray[i] = startmarker;
+        }
+
+    }
+
+    function getNearbyPlaces(latLng) {
+        foodService.nearbySearch({
+            location: latLng,
+            radius: 500,
+            types: ['food']
+
+        }, callback);
+
+    }
+
+    function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+                createMarker(results[i]);
+            }
+        }
+    }
+
+    function createMarker(place) {
+        var placeName = JSON.stringify(place.name)
+
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            animation: google.maps.Animation.DROP
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+
+            markerWindow.setContent(place.name);
+            markerWindow.open(map, this);
+        });
+    }
+
+    // google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initialize" async defer></script>
 </body>
+
 </html>
