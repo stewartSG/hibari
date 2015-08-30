@@ -62,7 +62,7 @@
             <i class="fa fa-paper-plane"></i>
         </span>Hibari
         </a>
-        <nav class="navbar-main" role="navigation" style="background-color: #3BB2D0; box-shadow: 0 2px 2px">
+        <nav class="navbar-main" role="navigation" style="background-color: #3BB2D0; box-shadow: 0 2px 2px; border-bottom-color: #3BB2D0">
             <!-- HABARI TOPNAV LEFT BUTTON-->
             <ul class="button-container pull-left">
                 <li class="item">
@@ -186,7 +186,7 @@
                             <p>SCAPE, Orchard (ETA: 60 minutes)</p>
                         </div>
                         <div class="progress progress-xs mg-btm-0">
-                            <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                            <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="background-color: #2ecc71; width: 65%;">
                             </div>
                         </div>
                         <div class="panel-body text-right">
@@ -331,11 +331,10 @@
         service = new google.maps.places.PlacesService(map);
 
         var trafficLayer = new google.maps.TrafficLayer();
-        trafficLayer.setMap(map);
-        directionsDisplay.setMap(map);
-
+        trafficLayer.setMap(map); //set traffic overlay
+        directionsDisplay.setMap(map); // set route overlay
         calculateAndDisplayRoute(directionsService, directionsDisplay);
-        getSGTrafficIncident();
+        // getSGTrafficIncident();
         // Instantiate an info window to hold step text.
 
 
@@ -376,7 +375,7 @@
         }, function(response, status) {
             if (status === google.maps.DirectionsStatus.OK) {
                 directionsDisplay.setDirections(response);
-                showSteps(response); // pass response object to showStep function to get steps
+                // showSteps(response); // pass response object to showStep function to get steps
                 console.log(JSON.stringify(response));
                 // console.log(JSON.stringify(response.routes[0].legs));
             } else {
