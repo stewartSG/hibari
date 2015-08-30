@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/switcher.css" type="text/css">
     <link rel="stylesheet" href="css/datepicker.css" type="text/css">
     <link rel="stylesheet" href="css/button.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-calendar.css" type="text/css">
     <!-- End CSS Files -->
 
     <style type="text/css"></style>
@@ -99,7 +100,7 @@
 
         <!-- HABARI CENTER TEXT -->
         <div class="nav-content">
-            <h3 class="page-title">Home</h3>
+            <h3 class="page-title">Timeline</h3>
         </div>
     </nav>
 </header>
@@ -149,7 +150,7 @@
 
                     <!-- Menu Item -->
                     <li class="border-left-blue">
-                        <a href="timeline.html">
+                        <a href="index.html">
                             <i class="menu-icon fa fa-lg fa-fw fa-clock-o"></i> <span>Timeline</span>
                         </a>
                     </li>
@@ -227,68 +228,56 @@
     <!-- Page Content -->
     <div class="content container-fluid sidebarRight animated fadeInUp collapse">
 
-        <div class="row">
-
-            <div class="col-sm-12">
-                <h3 class="page-header" style="margin-top: 0">Welcome Tyson!</h3>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="col-sm-4">
-                <div class="well well-white mini-profile-widget">
-                    <div class="image-container">
-                        <img src="img/1.jpg" class="avatar img-responsive" alt="avatar">
-                    </div>
-                    <div class="details">
-                        <h4>Tyson Kwek</h4>
-                        <hr>
-                        <div style="font-size:1.5em;">Accenture</div>
-                        <div>Technology Consultant</div>
-                        <div>Current City : Singapore, Orchard</div>
-                        <!--<p class="mg-top-20">-->
-                            <!--<a href="javascript:void(0);" class="btn btn-blue">-->
-                                <!--<i class="fa fa-facebook fa-fw"></i>-->
-                            <!--</a>-->
-                            <!--<a href="javascript:void(0);" class="btn btn-info">-->
-                                <!--<i class="fa fa-twitter fa-fw"></i>-->
-                            <!--</a>-->
-                            <!--<a href="javascript:void(0);" class="btn btn-red">-->
-                                <!--<i class="fa fa-google-plus fa-fw"></i>-->
-                            <!--</a>-->
-                        <!--</p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="well well-solid bg3 weather">
+        <section class="main-content">
+            <!-- content wrapper -->
+            <div class="content-wrap">
+                <!-- inner content wrapper -->
+                <div class="wrapper">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="top">
-                                <h3 class="title">Today : 33°C</h3>
-                                <h5>Singapore</h5>
-                                <canvas id="weatherToday" width="512" height="512"></canvas>
+                        <div class="col-md-12">
+                            <section class="panel calendar-panel">
+                                <div id="calendar"></div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item" id="dateDisplay">
+                                        30 August 2015
+                                    </a>
+                                </div>
+                            </section>
+                            <div>
+                                <ol class="timeline-events" id="eventList">
+
+                                    <li>
+                                        <div class="timeline-event__icon">
+                                            <div class="timeline-info">
+                                                <div class="timeline__timeline-date">
+                                                    <div class="timeline-date--time">1:45 PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--- End icon -->
+                                        <div class="timeline-event">
+                                            <h4 class="event-title">Lunch with Henry</h4>
+                                            <p>
+                                                2 North Bridge Road
+                                            </p>
+                                            <p>
+                                                Depart from Ang Mo Kio St 24 at 1.00 PM
+                                            </p>
+                                            <a href="teleport.html" class="btn btn-primary">Teleport</a>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="timeline-separator"></div>
                             </div>
                         </div>
-                        <div class="col-xs-4 mg-top-10">
-                            <canvas id="weatherDay1" width="256" height="256"></canvas>
-                            <h5>Sat : 26°C</h5>
-                        </div>
-                        <div class="col-xs-4 mg-top-10">
-                            <canvas id="weatherDay2" width="256" height="256"></canvas>
-                            <h5>Sun : 27°C</h5>
-                        </div>
-                        <div class="col-xs-4 mg-top-10">
-                            <canvas id="weatherDay3" width="256" height="256"></canvas>
-                            <h5>Mon : 25°C</h5>
-                        </div>
                     </div>
                 </div>
+
             </div>
-
-        </div>
-
+            <!-- /content wrapper -->
+            <a class="exit-offscreen"></a>
+        </section>
     </div>
     <!-- End Page Content -->
 

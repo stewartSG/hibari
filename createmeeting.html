@@ -226,27 +226,44 @@
             <div class="col-sm-12">
                 <div class="panel panel-white">
                     <div class="panel-body">
+                        <!-- FIXME banner 1 SMS SWITCH -->
+                        <div class="col-sm-12">
+                            <div class="panel panel-white border-top-light-blue">
+                                <div class="panel-body content-title-container">
+                                    <div class="left">
+                                        <h4 class="mg-top-5 mg-btm-0">SMS Reminder</h4>
+                                    </div>
+                                    <div class="right">
+                                        <input type="checkbox" name="my-checkbox" data-on-text="Turn On" data-off-text="Turn Off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="row">
                             <div class="col-sm-6 mg-btm-30">
                                 <h4>Meeting Title</h4>
-                                <input type="text" class="form-control" placeholder="Meeting Subject">
+                                <input type="text" class="form-control" value="Corporate Meeting" placeholder="Meeting Subject">
                             </div>
                             <div class="col-sm-6 mg-btm-30">
                                 <h4>Where</h4>
-                                <input type="text" class="form-control" placeholder="Location">
+                                <input type="text" class="form-control" value="SCAPE, Orchard" placeholder="Location">
                             </div>
                             <div class="col-sm-6 mg-btm-30">
-                                <h4>Meeting Date</h4>
+                                <h4>Meeting Date / Time</h4>
                                 <input name="startdate" class="form-control datepicker" style="padding-left: 10px;"
-                                       placeholder="Start Date">
+                                       placeholder="Start Date" value="08/31/2015">
+                                <input name="startdate" class="form-control datepicker" style="padding-left: 10px;"
+                                       placeholder="Start Date" value="11:00hrs">
                             </div>
                             <div class="col-sm-6 mg-btm-30">
                                 <h4>Meeting Date</h4>
                                 <input name="enddate" class="form-control datepicker" style="padding-left: 10px;"
-                                       placeholder="End Date">
+                                       placeholder="End Date" value="08/31/2015">
+                                <input name="enddate" class="form-control datepicker" style="padding-left: 10px;"
+                                       placeholder="End Date" value="13:00hrs">
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -262,7 +279,6 @@
                             <div id="todo-list" class="panel panel-white border-top-maroon" style="margin-top: 10px;">
                                 <div class="panel-heading">
                                     <h3 class="panel-title"> Agenda List</h3>
-
                                 </div>
                                 <div class="panel-body" style="margin-top: 10px;">
                                     <div class="slimScrollDiv"
